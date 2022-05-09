@@ -1,0 +1,26 @@
+.client {
+  display: flex;
+  justify-content: center;
+}
+
+.client__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  fill: $color-secondary-fons;
+  border: 1px solid $color-secondary-fons;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid $color-accent;
+    fill: $color-accent;
+  }
+}
+
+.client__company:not(:last-child) {
+  margin-right: 30px;
+}

@@ -1,0 +1,72 @@
+.subscription {
+  margin-left: auto;
+}
+
+.subscription__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 12px;
+
+  color: $color-primary-white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.subscription__form {
+  margin-left: auto;
+  margin-right: auto;
+  &:focus-within>.subscription__input {
+    outline: none;
+  }
+}
+
+.subscription__input {
+  margin: 0;
+  margin-right: 12px;
+  padding: 16px 15px;
+  width: 358px;
+  height: 50px;
+
+  color: $color-secondary-text;
+  background-color: $color-secondary-fon;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  border: 1px solid $color-subscription-border;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  &::placeholder {
+    color: $color-secondary-text;
+  }
+}
+
+.subscription__button {
+  display: inline-flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
+  min-width: 200px;
+
+  color: $color-primary-white;
+  background-color: $color-accent;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.subscription__svg {
+  fill: $color-primary-white;
+}

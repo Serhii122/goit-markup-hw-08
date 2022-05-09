@@ -1,0 +1,83 @@
+.command-list {
+  background-color: $color-primary-gray;
+  .title {
+    color: $color-title-text;
+  }
+}
+
+.comand__container {
+  background-color: $color-primary-white;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.comand {
+  display: flex;
+
+  .comand__container:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.comand__images {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+}
+
+.comand-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.comand-padding__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.comand-padding__text {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.masege {
+  max-height: 44px;
+  display: flex;
+  justify-content: center;
+}
+
+.masege__icon {
+  display: flex;
+  margin-bottom: 30px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  fill: $color-secondary-fons;
+  border-radius: 50%;
+  background-color: $color-primary-white;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $color-primary-white;
+    background-color: $color-accent;
+  }
+}
