@@ -12,6 +12,10 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .subscription__form {
@@ -20,10 +24,15 @@
   &:focus-within>.subscription__input {
     outline: none;
   }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .subscription__input {
   margin: 0;
+  margin-bottom: 20px;
   margin-right: 12px;
   padding: 16px 15px;
   width: 358px;
@@ -44,8 +53,6 @@
 }
 
 .subscription__button {
-  display: inline-flex;
-  justify-content: space-between;
   padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 29px;
@@ -65,6 +72,11 @@
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    justify-content: space-between;
+  }
 }
 
 .subscription__svg {

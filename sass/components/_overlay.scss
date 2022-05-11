@@ -1,6 +1,6 @@
 .overlay {
   max-width: 1600px;
-  min-height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right,
@@ -11,12 +11,20 @@
   background-position: center;
   background-size: cover;
   background-color: $color-secondary-fon;
+  
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
 }
 
 .services {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .services__title {
@@ -25,10 +33,14 @@
 
   color: $color-primary-white;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .services__btn {
