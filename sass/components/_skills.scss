@@ -11,7 +11,7 @@
 }
 
 .feature__item {
-  width: 270px;
+  width: 450px;
 
   @media screen and (min-width: 768px){
     width: calc((100% - 2 * 30px)/2);
@@ -33,10 +33,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: $color-primary-gray;
   border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .feature__title {

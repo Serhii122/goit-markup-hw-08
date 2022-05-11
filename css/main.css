@@ -528,7 +528,7 @@ body {
 }
 
 .feature__item {
-  width: 270px;
+  width: 450px;
 }
 
 @media screen and (min-width: 768px) {
@@ -561,10 +561,22 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .feature__icon {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature__icon {
+    width: 270px;
+  }
 }
 
 .feature__title {
@@ -896,16 +908,25 @@ body {
   }
 }
 
+.footer__content {
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .footer__content {
     margin-right: 165px;
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__content {
+    margin-left: 76px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer__content {
     margin-bottom: 60px;
-    text-align: center;
   }
 }
 
@@ -1013,8 +1034,17 @@ body {
   margin: 0;
 }
 
-.subscription {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .subscription {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription {
+    margin-left: auto;
+  }
 }
 
 .subscription__title {
@@ -1054,7 +1084,7 @@ body {
   margin-bottom: 20px;
   margin-right: 12px;
   padding: 16px 15px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2F303A;
@@ -1066,6 +1096,12 @@ body {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription__input {
+    width: 358px;
+  }
 }
 
 .subscription__input::-webkit-input-placeholder {
@@ -1106,6 +1142,16 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscription__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1432,16 +1478,14 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .navigation {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
