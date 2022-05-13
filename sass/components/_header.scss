@@ -1,15 +1,24 @@
 .pade-header {
   position: relative;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid $color-header-border;
+
+  @media screen and (min-width:768px) {
+    padding-top: 20px;
+    padding-bottom: 19px;
+  }
+
+  @media screen and (min-width:1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .pade-header__container {
-  display: flex;
-  align-items: center;
-
-  @media screen and (max-width: 767px) {
+  .pade-header__nav {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 }
@@ -29,19 +38,21 @@
   }
 }
 
-.pade-header__button.is-open .pade-header__cross {
+.pade-header__button.is-open {
   .pade-header__cross {
     display: block;
   }
 }
 
-.pade-header__button.is-open .pade-header__menu {
+.pade-header__button.is-open {
   .pade-header__menu {
     display: none;
   }
 }
 
 .pade-header__menu-container {
+  display: flex;
+  justify-content: space-between;
   background-color: $color-primary-white;
 
   @media screen and (max-width: 767px) {
@@ -74,17 +85,21 @@
 .site-nav--list {
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 88px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 93px;
   }
 }
 
 .site-nav__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
   @media screen and (min-width: 768px) {
     margin-right: 50px;
+  }
+}
+
+.site-nav__item:last-child {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 302px;
   }
 }
 
@@ -128,16 +143,6 @@
   }
 }
 
-.auth-nav {
-  @media screen and (min-width: 768px) {
-    margin-left: 64px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 285px;
-  }
-}
-
 .auth-nav--list {
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -173,6 +178,10 @@
 }
 
 .auth-nav__contact--mail {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+
   @media screen and (max-width: 767px) {
     font-size: 24px;
     line-height: 1.16;
