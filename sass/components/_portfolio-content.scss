@@ -7,7 +7,6 @@
 }
 
 .examples__list {
-  margin-right: 30px;
   margin-bottom: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -127,7 +126,6 @@
   padding-left: 24px;
   padding-right: 24px;
 
-  width: 370px;
   height: 294px;
   background-color: $color-background-button;
   transform: translateY(295px);
