@@ -6,7 +6,7 @@
   background-image: linear-gradient(to right,
       $color-secondary-fonheader,
       $color-secondary-fonheader),
-    url("../../images/Header480.jpg");
+    url("../images/Header480.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -25,7 +25,7 @@ screen and(min-resolution: 2dppx) {
     background-image: linear-gradient(to right,
       $color-secondary-fonheader,
       $color-secondary-fonheader),
-      url("../../images/Header4802x.jpg");
+      url("../images/Header4802x.jpg");
   }
 }
 
@@ -34,7 +34,7 @@ screen and(min-resolution: 2dppx) {
     background-image: linear-gradient(to right,
       $color-secondary-fonheader,
       $color-secondary-fonheader),
-      url("../../images/Header768.jpg");
+      url("../images/Header768.jpg");
   }
 
   @media screen and(min-device-pixel-ratio: 2),
@@ -45,7 +45,7 @@ screen and(min-resolution: 2dppx) {
       background-image: linear-gradient(to right,
         $color-secondary-fonheader,
         $color-secondary-fonheader),
-        url("../../images/Header7862x.jpg");
+        url("../images/Header7862x.jpg");
     }
   }
 }
@@ -55,7 +55,7 @@ screen and(min-resolution: 2dppx) {
     background-image: linear-gradient(to right,
       $color-secondary-fonheader,
       $color-secondary-fonheader),
-      url("../../images/Header1600.jpg");
+      url("../images/Header1600.jpg");
   }
 
   @media screen and(min-device-pixel-ratio: 2),
@@ -66,7 +66,7 @@ screen and(min-resolution: 2dppx) {
       background-image: linear-gradient(to right,
         $color-secondary-fonheader,
         $color-secondary-fonheader),
-        url("../../images/Header16002x.jpg");
+        url("../images/Header16002x.jpg");
     }
   }
 }

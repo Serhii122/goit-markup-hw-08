@@ -208,9 +208,13 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="comand list">
           <li class="comand__container">
-            <img srcset="./images/foto1-450.jpg 480w, ./images/foto1-354.jpg 768w, ./images/foto1-270.jpg 1200w" 
+            <img srcset="
+            ./images/foto1-270.jpg 270w, 
+            ./images/foto1-354.jpg 354w, 
+            ./images/foto1-450.jpg 450w,
+            " 
             src="./images/foto1-270.jpg" class="comand__images" alt="Игорь Демьяненко"
-            sizes="100vw"
+            sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
             >
             <div class="comand-padding">
               <h3 class="comand-padding__title title">Игорь Демьяненко</h3>
@@ -248,7 +252,14 @@
             </div>
           </li>
           <li class="comand__container">
-            <img src="./images/foto2.jpg" class="comand__images" width="270" height="260" alt="Ольга Репина">
+            <img srcset="
+            ./images/foto2-270.jpg 270w, 
+            ./images/foto2-354.jpg 354w, 
+            ./images/foto2-450.jpg 450w,
+            " 
+            src="./images/foto1-270.jpg" class="comand__images" width="270" height="260" alt="Ольга Репина"
+            sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
+            >
             <div class="comand-padding">
               <h3 class="comand-padding__title title">Ольга Репина</h3>
               <p class="comand-padding__text">Frontend Developer</p>
