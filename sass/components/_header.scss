@@ -53,6 +53,7 @@
 .pade-header__menu-container {
   display: flex;
   justify-content: space-between;
+  z-index: 1;
   background-color: $color-primary-white;
 
   @media screen and (max-width: 767px) {
