@@ -217,14 +217,12 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="comand list">
           <li class="comand__container">
-            <img srcset="
-            ./images/foto1-270.jpg 270w, 
-            ./images/foto1-354.jpg 354w, 
-            ./images/foto1-450.jpg 450w,
-            " 
-            src="./images/foto1-270.jpg" class="comand__images" alt="Игорь Демьяненко"
-            sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
-            >
+            <picture>
+              <source srcset="./images/foto1-270.jpg 1x, ./images/foto1-2702x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/foto1-354.jpg 1x, ./images/foto1-3542x.jpg 2x" media="(min-width: 768)">
+              <source srcset="./images/foto1-450.jpg 1x, ./images/foto1-4502x.jpg 2x" media="(max-width: 767)">
+              <img src="./images/foto1-270.jpg" class="comand__images" alt="Игорь Демьяненко">
+            </picture>
             <div class="comand-padding">
               <h3 class="comand-padding__title title">Игорь Демьяненко</h3>
               <p class="comand-padding__text">Product Designer</p>

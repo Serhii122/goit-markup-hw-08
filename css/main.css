@@ -992,6 +992,24 @@ body {
   height: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .comand__images {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .comand__images {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comand__images {
+    width: 270px;
+  }
+}
+
 .comand-padding {
   padding-top: 30px;
   padding-bottom: 24px;
