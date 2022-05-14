@@ -11,19 +11,17 @@
 
 .container {
   .footer__address {
-  &:not(:last-child) {
-    margin-bottom: 8px;
+    &:not(:last-child) {
+      margin-bottom: 8px;
 
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 9px;
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+      }
     }
-  }
   }
 }
 
 .footer__content {
-  text-align: center;
-
   @media screen and (min-width: 768px) {
     margin-right: 165px;
   }
@@ -34,8 +32,9 @@
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
+    text-align: center;
   }
-  
+
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
@@ -70,7 +69,6 @@
     display: flex;
     flex-wrap: wrap;
   }
-  
 }
 
 .footer__text {
@@ -83,7 +81,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  
+
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
@@ -91,7 +89,7 @@
 
 .footer__masege {
   display: flex;
-  
+
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
     justify-content: center;

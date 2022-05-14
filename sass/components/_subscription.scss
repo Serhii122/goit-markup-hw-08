@@ -4,8 +4,8 @@
     margin-right: auto;
   }
 
-  @media screen and (min-width: 1200px){
-    margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
   }
 }
 
@@ -28,7 +28,7 @@
 .subscription__form {
   margin-left: auto;
   margin-right: auto;
-  &:focus-within>.subscription__input {
+  &:focus-within > .subscription__input {
     outline: none;
   }
 
@@ -95,7 +95,6 @@
 
   @media screen and (min-width: 1200px) {
     display: inline-flex;
-    // justify-content: space-between;
   }
 }
 
