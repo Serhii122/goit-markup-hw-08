@@ -65,6 +65,9 @@
 }
 
 .subscription__button {
+  display: inline-flex;
+  justify-content: space-between;
+
   padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 29px;
@@ -92,7 +95,7 @@
 
   @media screen and (min-width: 1200px) {
     display: inline-flex;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
 }
 
