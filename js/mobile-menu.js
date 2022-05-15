@@ -1,15 +1,14 @@
 (() => {
-  const menuBtnRef = document.querySelector("[data-menu-button]");
-  const mobileMenuRef = document.querySelector("[pade-header__menu-container]");
-  
-  menuBtnRef.addEventListener("click", () => {
-    const expanded =
-      menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-     
-    menuBtnRef.classList.toggle("is-open");
-    menuBtnRef.setAttribute("aria-expanded", !expanded);
+  const refs = {
+    openModalBtn: document.querySelector("[burger-open]"),
+    closeModalBtn: document.querySelector("[burger-close]"),
+    modal: document.querySelector("[burger]"),
+  };
 
-    mobileMenuRef.classList.toggle("is-open");
-  });
-    
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden-burger");
+  }
 })();

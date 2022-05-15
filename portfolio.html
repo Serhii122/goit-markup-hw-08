@@ -20,101 +20,49 @@
     <!--Хедер-->
     <header class="pade-header">
       <div class="container pade-header__container">
-        <nav class="pade-header__nav">
-          <a href="/" class="pade-header__logo"
-            >Web<span class="pade-header__logo--span">Studio</span></a
-          >
-          <button
-            type="button"
-            class="pade-header__button"
-            aria-expanded="false"
-            aria-controls="pade-header__menu-container"
-            data-menu-button
-          >
-            <svg
-              width="40"
-              height="40"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use
-                class="pade-header__cross"
-                href="./images/icon.svg#icon-cross"
-              ></use>
-              <use
-                class="pade-header__menu"
-                href="./images/icon.svg#icon-menu"
-              ></use>
-            </svg>
-          </button>
-          <div
-            class="pade-header__menu-container"
-            width="480"
-            id="pade-header__menu-container"
-            pade-header__menu-container
-          >
-            <div class="site-nav">
-              <ul class="site-nav__list list">
-                <li class="site-nav__item">
-                  <a href="./index.html" class="site-nav__link">Студия</a>
-                </li>
-                <li class="site-nav__item">
-                  <a
-                    href="./portfolio.html"
-                    class="site-nav__link site-nav__link--current"
-                    >Портфолио</a
-                  >
-                </li>
-                <li class="site-nav__item">
-                  <a href="" class="site-nav__link">Контакты</a>
-                </li>
-              </ul>
-            </div>
-            <div class="auth-nav">
-              <ul class="auth-nav__list list">
-                <li class="auth-nav__item">
-                  <a
-                    href="mailto:info@devstudio.com"
-                    class="auth-nav__contact auth-nav__contact--mail"
-                  >
-                    <svg class="auth-nav__contact-icon" width="16" height="12">
-                      <use href="./images/icon.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com
-                  </a>
-                </li>
-                <li class="auth-nav__item">
-                  <a
-                    href="tel:+380961111111"
-                    class="auth-nav__contact auth-nav__contact--tel"
-                  >
-                    <svg class="auth-nav__contact-icon" width="10" height="16">
-                      <use href="./images/icon.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="contact">
-              <ul class="contact__list list">
-                <li class="contact__item">
-                  <a href="" class="contact__text contact__text--left"
-                    >Instagram</a
-                  >
-                </li>
-                <li class="contact__item">
-                  <a href="" class="contact__text">Twitter</a>
-                </li>
-                <li class="contact__item">
-                  <a href="" class="contact__text">Facebook</a>
-                </li>
-                <li class="contact__item">
-                  <a href="" class="contact__text">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <a href="/" class="pade-header__logo"
+          >Web<span class="pade-header__logo--span">Studio</span></a
+        >
+        <nav>
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a
+                href="./portfolio.html"
+                class="site-nav__link site-nav__link--current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакты</a>
+            </li>
+          </ul>
         </nav>
+        <ul class="auth-nav list">
+          <li class="auth-nav__item">
+            <a href="mailto:info@devstudio.com" class="auth-nav__contact">
+              <svg class="auth-nav__contact-icon" width="16" height="12">
+                <use href="./images/icon.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="auth-nav__item">
+            <a href="tel:+380961111111" class="auth-nav__contact">
+              <svg class="auth-nav__contact-icon" width="10" height="16">
+                <use href="./images/icon.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+        <button class="burger-button" burger-open>
+          <svg width="40" height="40">
+            <use href="./images/icon.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--Мейн-->
@@ -654,6 +602,54 @@
         </div>
       </div>
     </footer>
+    <div class="burger is-hidden-burger" burger>
+      <div class="burger__block">
+        <button class="burger__mobile" type="button" burger-close>
+          <svg class="burger__close" width="40" height="40" burger-close>
+            <use href="./images/icon.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <ul class="burger__site-nav list">
+          <li class="burger__item">
+            <a href="./index.html" class="burger__link">Студия</a>
+          </li>
+          <li class="burger__item">
+            <a href="./portfolio.html" class="burger__link">Портфолио</a>
+          </li>
+          <li class="burger__item">
+            <a href="" class="burger__link">Контакты</a>
+          </li>
+        </ul>
+        <div class="contact">
+          <ul class="contact__auth-nav list">
+            <li class="contact__adress">
+              <a href="tel:+380961111111" class="contact__adress-tel">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="contact__adress">
+              <a href="mailto:info@devstudio.com" class="contact__adress-mail">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="contact__list list">
+            <li class="contact__item">
+              <a href="" class="contact__text contact__text--left">Instagram</a>
+            </li>
+            <li class="contact__item">
+              <a href="" class="contact__text">Twitter</a>
+            </li>
+            <li class="contact__item">
+              <a href="" class="contact__text">Facebook</a>
+            </li>
+            <li class="contact__item">
+              <a href="" class="contact__text">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
